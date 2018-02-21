@@ -13,6 +13,8 @@ public class BookServiceClient  {
 	@Autowired
 	@LoadBalanced
 	private RestTemplate restTemplate;
+	
+	
 
 	public Map<String, String> getBook() {
 		return restTemplate.getForObject("", Map.class);
